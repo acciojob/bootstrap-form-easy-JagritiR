@@ -1,6 +1,4 @@
-
-/* Your CSS Code here. */
-/* Style the input fields */
+/* Style the input fields and the textarea */
 .form-control {
   width: 100%;
   padding: 12px;
@@ -41,3 +39,12 @@
 .form-check-input:invalid:focus ~ .invalid-feedback {
   display: block;
 }
+
+/* Make the form responsive using media queries */
+@media (max-width: 768px) {
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
