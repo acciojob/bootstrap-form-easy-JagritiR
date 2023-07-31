@@ -1,2 +1,43 @@
 
 /* Your CSS Code here. */
+/* Style the input fields */
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+/* Style the select element */
+.form-control select {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Style the submit button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+/* Style the invalid feedback messages */
+.invalid-feedback {
+  width: 100%;
+  margin-top: .25rem;
+  font-size: .875rem;
+  color: #dc3545;
+}
+
+/* Hide the invalid feedback messages by default */
+.form-control:invalid ~ .invalid-feedback,
+.form-check-input:invalid ~ .invalid-feedback {
+  display: none;
+}
+
+/* Show the invalid feedback messages when the input is focused and invalid */
+.form-control:invalid:focus ~ .invalid-feedback,
+.form-check-input:invalid:focus ~ .invalid-feedback {
+  display: block;
+}
